@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomMovieViewCell" customModule="TMDBDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpF-VM-BTm">
+                        <rect key="frame" x="15" y="10" width="290" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-ZO-I2z">
+                        <rect key="frame" x="15" y="39.5" width="290" height="200.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vqs-ZO-I2z" firstAttribute="top" secondItem="kpF-VM-BTm" secondAttribute="bottom" constant="10" id="Aty-DD-brw"/>
+                <constraint firstItem="kpF-VM-BTm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Ju6-Iy-fET"/>
+                <constraint firstItem="kpF-VM-BTm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="TPv-DR-uoK"/>
+                <constraint firstItem="vqs-ZO-I2z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="cZk-6X-7dF"/>
+                <constraint firstAttribute="bottom" secondItem="vqs-ZO-I2z" secondAttribute="bottom" constant="10" id="cz0-hk-cj5"/>
+                <constraint firstAttribute="trailing" secondItem="vqs-ZO-I2z" secondAttribute="trailing" constant="15" id="jhb-AW-KZc"/>
+                <constraint firstAttribute="trailing" secondItem="kpF-VM-BTm" secondAttribute="trailing" constant="15" id="r5J-hi-pPF"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="vqs-ZO-I2z" id="Sgl-ci-e3v"/>
+                <outlet property="titleLabel" destination="kpF-VM-BTm" id="KUz-mM-glf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
